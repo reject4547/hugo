@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Hugo Alert</title>
+    <link rel="stylesheet" href="css/blocked.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Are you sure you want to support <span id="main-header-domain">this site</span>?</h1>
+
+        <div id="boilerplate">
+            <p>Hugo detected that this site is owned by an enabler of the Trump administration.</p>
+            <p>Hugo encourages you to make intentional choices about your browsing.</p>
+            <p>We paused loading this page to give you a moment to decide where your money and attention goes.</p>
+            <p>Consider navigating to an alternative, or use the buttons below to continue.</p>
+        </div>
+
+        <div class="message-box">
+            <h2>Why was this site blocked?</h2>
+            <div id="message">
+                Your choices matter.
+            </div>
+        </div>
+
+        <div class="bypass-options">
+            <p>I really need to access <span id="domain-name">this site</span>:</p>
+            <div class="button-group">
+                <button id="bypass-btn" class="bypass-btn">Snooze this warning</button>
+                <button id="perm-bypass-btn" class="bypass-btn">Never warn on this site again</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="blocked.js"></script>
+</body>
+
+</html>

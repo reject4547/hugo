@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/popup.css">
+</head>
+
+<body>
+  <h1>Hugo Warnings</h1>
+
+  <div class="card">
+    <div id="status-container" class="status-indicator status-active">
+      <div class="status-dot"></div>
+      <span id="status-text">Active</span>
+    </div>
+    <div id="timer-display" style="text-align:center; font-size:12px; color:#666; display:none;">
+      Paused until <span id="time-remaining"></span>
+    </div>
+    <button id="resume-btn" class="primary">Resume Warnings</button>
+
+    <div id="pause-controls">
+      <h2>Pause All Warnings</h2>
+      <div class="btn-group">
+        <button id="pause-15m">15m</button>
+        <button id="pause-1h">1h</button>
+        <button id="pause-24h">24h</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="card" id="temp-bypass-container" style="display:none;">
+    <h2>Snoozed Warnings</h2>
+    <ul id="temp-bypass-list" class="bypass-list">
+      <!-- Items added here dynamically -->
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>Never warn on these sites</h2>
+    <div style="display: flex; gap: 6px; margin-bottom: 8px;">
+      <input type="text" id="bypass-input" placeholder="example.com">
+      <button id="add-bypass" class="primary" style="flex: 0 0 auto;">Add</button>
+    </div>
+    <ul id="bypass-list" class="bypass-list">
+      <!-- Items added here dynamically -->
+    </ul>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+
+</html>
